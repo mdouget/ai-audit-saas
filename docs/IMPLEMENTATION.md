@@ -24,5 +24,8 @@ Managed OIDC with MFA, strict tenant isolation, resource-level access, RLS as de
 ## Roadmap
 PR1: foundation, tenancy, authorization. PR2: control library and questionnaire. PR3: scoring/findings/dashboard. PR4: AI recommendations/roadmap/PDF. PR5: reassessment/security hardening/beta.
 
-## Scaffold limitations
-This initial commit contains only a landing page, demo scoring endpoint, pure scoring module, tests, local Docker services, and documentation. It does **not** yet implement OIDC, tenancy, customer management, RLS, evidence processing, AI recommendations, reporting, or billing. The development database container is not yet connected to the API.
+## Tenant workspace milestone
+
+The first functional milestone adds PostgreSQL migrations, Auth0 OIDC login, local user provisioning, organizations and memberships, and draft assessment management. The dashboard supports onboarding, switching organizations, and creating, editing, archiving and restoring drafts. Membership management uses registered account IDs. The API resolves membership for each requested organization before issuing scoped queries, and the runtime role is subject to forced PostgreSQL row-level security.
+
+The control library, questionnaire, evidence, assessment scoring integration, audit trail, remediation, reports, and billing remain roadmap work. The demo scoring endpoint remains separate from authenticated assessments.
