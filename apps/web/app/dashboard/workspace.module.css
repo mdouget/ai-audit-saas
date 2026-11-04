@@ -1,0 +1,19 @@
+.shell { max-width: 1050px; padding: 2rem 1.25rem; margin: auto; }
+.header { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; margin-bottom: 1rem; }
+.brand { color: #30538b; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .13em; }
+.grid { display: grid; grid-template-columns: minmax(220px, 1fr) minmax(0, 2.7fr); gap: 1.25rem; }
+.card { background: white; padding: 1.25rem; margin-bottom: 1rem; border-radius: .8rem; border: 1px solid #d9e2ee; }
+.card h2 { margin-top: 0; }
+.card ul { padding-left: 1.2rem; }
+.card li { margin-block: .55rem; overflow-wrap: anywhere; }
+.shell a { color: #214f97; }
+.shell a[aria-current] { font-weight: 700; text-decoration-thickness: .16em; }
+.nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+.card form { display: grid; gap: .75rem; margin-top: 1rem; }
+.card label { display: grid; gap: .35rem; font-weight: 600; }
+.card input, .card textarea { font: inherit; border: 1px solid #8797ad; border-radius: .35rem; padding: .55rem; min-width: 0; }
+.card textarea { min-height: 5rem; resize: vertical; }
+.card button { justify-self: start; border: 0; border-radius: .35rem; padding: .6rem .8rem; background: #214f97; color: white; font: inherit; cursor: pointer; }
+.badge { display: inline-block; margin-left: .5rem; background: #edf2fa; border-radius: .25rem; padding: .13rem .45rem; font-size: .85rem; }
+.error { color: #8b2020; }
+@media (max-width: 650px) { .grid { grid-template-columns: 1fr; gap: .5rem; } }

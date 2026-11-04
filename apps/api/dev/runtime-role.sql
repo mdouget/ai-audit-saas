@@ -1,0 +1,3 @@
+-- Local Docker and CI fixture only.
+CREATE ROLE assurance_app LOGIN PASSWORD 'local-runtime-only'
+    NOSUPERUSER NOCREATEDB NOCREATEROLE NOINHERIT NOREPLICATION NOBYPASSRLS;

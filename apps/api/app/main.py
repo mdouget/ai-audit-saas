@@ -1,8 +1,10 @@
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 from .scoring import Answer, calculate, Status
+from .tenancy import router
 
 app = FastAPI(title="AI Assurance API", version="0.1.0")
+app.include_router(router)
 
 class ResponseItem(BaseModel):
     domain: str

@@ -21,6 +21,6 @@ export default function Home() {
         <h2 style={{fontSize:18}}>{name}</h2><p style={{color:'#617189',lineHeight:1.5}}>{description}</p>
       </article>)}
     </section>
-    <p style={{marginTop:32,color:'#6c7b8b'}}>Prototype only — customer authentication, assessments, and reports are not yet implemented.</p>
+    <p style={{marginTop:32}}><a href="/dashboard">Open assessment workspace</a></p>
   </main>;
 }
